@@ -9,6 +9,10 @@ const nextConfig = {
         source: "/api/:path*",
         destination: "https://www.wonni.site/api/:path*",
       },
+      {
+        source: "/api3/:path*",
+        destination: "https://jsonplaceholder.typicode.com/:path*",
+      },
     ];
   },
 };

@@ -1,8 +1,17 @@
-import type { GetServerSideProps, InferGetServerSidePropsType } from "next";
+import type { GetServerSideProps } from "next";
 
-export default function Test({
-  data,
-}: InferGetServerSidePropsType<GetServerSideProps>) {
+interface Data {
+  userId: number;
+  id: number;
+  title: string;
+  body: string;
+}
+
+interface DataProps {
+  data: Data;
+}
+
+export default function Test({ data }: DataProps) {
   return (
     <div>
       <p>{process.env.NEXT_PUBLIC_API_URL}</p>
@@ -18,6 +27,13 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   const { id } = context.query;
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
   const data = await res.json();
+
+  if (!data) {
+    return {
+      notFound: true,
+    };
+  }
+
   return {
     props: { data },
   };

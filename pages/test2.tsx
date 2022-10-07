@@ -3,7 +3,6 @@ import type { GetServerSideProps, InferGetServerSidePropsType } from "next";
 export default function Test({
   data,
 }: InferGetServerSidePropsType<GetServerSideProps>) {
-  console.log(data);
   return (
     <div>
       <p>{process.env.NEXT_PUBLIC_API_URL}</p>
