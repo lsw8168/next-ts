@@ -8,7 +8,7 @@ export default function Test({
   return (
     <div>
       <p>{process.env.NEXT_PUBLIC_API_URL}</p>
-      <p>{data.name}</p>
+      <p>{data.name} v332432423432423423424234234234</p>
     </div>
   );
 }
