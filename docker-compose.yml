@@ -5,9 +5,3 @@ services:
     container_name: next-ts-container
     image: ghcr.io/lsw8168/next-ts-image
     command: sh -c "npm run start"
-    networks:
-      - nginx-proxy-manager
-
-networks:
-  nginx-proxy-manager:
-    external: true
