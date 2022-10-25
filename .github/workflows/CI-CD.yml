@@ -2,7 +2,7 @@
 name: CI-CD # Github Action 페이지 좌측 리스트에 표시될 이름
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 env:
   DOCKER_IMAGE: ghcr.io/lsw8168/next-ts-image # ghcr에 업로드될 이미지 이름, format: ghcr.io/깃허브유저이름/이미지이름
