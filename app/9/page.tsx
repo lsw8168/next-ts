@@ -46,7 +46,7 @@ export default function Home() {
           {arrayList.map((data, i) => {
             return (
               <td key={i}>
-                {data.map((d, i) => {
+                {data.map((d: any, i: any) => {
                   return (
                     <div key={i}>
                       {d.DEAL_DD}일{" "}
