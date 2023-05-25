@@ -8,14 +8,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -54,6 +46,7 @@ thead th {
   top: 0;
   border-top: 0;
   background-clip: padding-box;
+  color: #000;
 }
 tbody th {
   background-clip: padding-box;
@@ -70,4 +63,8 @@ tbody th {
 thead th,
 tbody th {
   background-color: #f8f8f8;
+}
+
+.yellow {
+  color: #ff0000;
 }

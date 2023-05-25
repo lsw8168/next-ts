@@ -43,8 +43,7 @@ export default function Home() {
                 {data.map((d: any, i: any) => {
                   return (
                     <div key={i}>
-                      {d.DEAL_DD}일{" "}
-                      <span style={{ color: "#b55000" }}>{d.SUM_AMT}</span>(
+                      {d.DEAL_DD}일 <span className="yellow">{d.SUM_AMT}</span>(
                       {d.APTFNO}층) {d.REQ_GBN}
                     </div>
                   )
