@@ -32,7 +32,7 @@ export default function Home() {
 
     const data = groups.map((d, i) => {
       const arrayList = [...Array(12).keys()].map((_, index) => {
-        return d.data.filter((e) => {
+        return d.data.filter((e: any) => {
           return Number(e.DEAL_MM) === index + 1
         })
       })
