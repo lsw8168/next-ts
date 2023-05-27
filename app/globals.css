@@ -21,7 +21,7 @@ body {
 table {
   border-collapse: collapse;
   border: 0;
-  font-size: 0.825rem;
+  font-size: 0.785rem;
 }
 th,
 td {
@@ -67,4 +67,12 @@ tbody th {
 
 .yellow {
   color: #ff0000;
+}
+
+.value > div:not(:last-child) {
+  padding-bottom: 7px;
+}
+
+h2 {
+  padding: 10px 0 5px;
 }
